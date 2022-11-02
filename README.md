@@ -61,14 +61,22 @@
 
 ## Design Notes
 
-- Have individual disconnect switches for every appliance
+- Have individual disconnect switches for every appliance (so you can reduce
+  draw if needed)
 - Have a master disconnect switch for the entire system
 - Have a cutoff switch for the solar panels
+  - Always disconnect solar when messing with the charging system
 
 ## Electrical Notes
 
-- 125% amp rating for fuses: 10amp appliance => 12.5amp+ fuse
 - 6g wire for charge system (or less/thicker)
+
+#### What size fuse do I need?
+
+125% amp rating for fuses: `10amp appliance => 12.5amp +/- fuse`
+
+#### What's the difference between series and parallel for solar panels?
+
 - **Series**:
   - Daisy-chain
   - Voltage goes up, amps stay same
@@ -79,6 +87,9 @@
   - Amps go up, volts the same
   - Must be same voltage!
   - Can handle partial shade on some panels without impacting charging
+
+#### How do I calculate how big my solar/battery arrays need to be?
+
 - Plan for 3-5 days of autonomy only on battery
   - TOTAL LOAD x HOURS USED = WATT HOURS
   - WATT HOURS \* 3-5 days = BATTERY SIZE (round to nearest battery size)
